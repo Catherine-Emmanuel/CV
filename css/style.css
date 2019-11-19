@@ -1,0 +1,257 @@
+*{
+  box-sizing: border-box;
+  padding:0;
+  margin:0;
+}
+
+h1,h2,h3,h4,h5,h6,nav>ul>li{
+  font-family: 'PT Sans', sans-serif;
+  font-weight: normal;
+  text-align:center;
+  text-transform: uppercase;
+}
+h1,h2,h3,h4,h5,h6{
+  font-size: 20px;
+  font-weight: bold;
+}
+
+p,li{
+  font-family: 'PT Serif', serif;
+  list-style: none;
+}
+
+section{
+  display: inline-block;
+  width: 100%;
+}
+
+nav{
+  width: 100%;
+  background-color: grey;
+  top: 0px;
+  position: sticky;
+}
+
+nav ul{
+  list-style-type:none;
+}
+
+nav li{
+  float: left;
+  width: calc(100%/5);
+  background-color: #6593A6;
+  text-align: center !important;
+}
+
+nav a{
+    display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover{
+    color: #f1dec8;
+    border-bottom: 2px solid #f1dec8;
+}
+
+.div1{
+  border: solid 2px black;
+  padding: 15px;
+  text-align:center;
+  margin: 10px;
+}
+
+.background{
+  padding: 50px;
+  background-color: #f1dec8;
+}
+#experiences li{
+  padding: 5px 0px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.right,.left,.middle{
+  padding: 50px;
+  box-sizing: border-box;
+
+}
+.right30{
+  float: right;
+  width: 30%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.left70{
+  float: left;
+  width: 70%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+#apropos{
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+}
+
+#experiences{
+  background-color: lightgrey;
+}
+#experiences>div:nth-child(1)>div.right>ul>li>img{
+  width: 72px;
+}
+
+#bordure{
+  border:solid 5px darkgrey;
+}
+.inline>li{
+  display: inline;
+}
+#experiences > div:nth-child(2) > div.left>ul>li>img{
+  height: 20px;
+}
+
+#gallery{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+#experiences div:nth-child(1) .right, #experiences div:nth-child(1) .left{
+  width: 50%;
+  float: left;
+}
+#education div .right, #education div .left{
+  width: 50%;
+  float: left;
+}
+.clear{
+  clear: both;
+}
+
+
+
+/*début gallerie images*/
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+#gallery div.gallery:hover .desc{
+  opacity: 1;
+}
+div.gallery {
+  position: relative;
+  width: calc(100%/4);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+/*fin gallerie images*/
+
+
+
+#education > div > div.left > img{
+  width: 100%
+}
+#experiences > div > div.right > ul > li > a > img{
+  width: 172px;
+  padding-right: 25px;
+}
+label, input{
+  display: none;
+}
+#apropos > div.middle > p{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+i{
+  padding: 8px
+}
+#experiences > div.clear > div.left > ul:nth-child(4) > li > a > img{
+  width: 200px;
+}
+
+
+/*média queries pour tablettes*/
+@media screen and (max-width:768px){
+  p{
+    font-size: 20px;
+  }
+  #apropos{
+    display: flex;
+    flex-flow: row wrap;
+  }
+  #bordure{
+    width: 100%;
+  }
+  #apropos>.left{
+    width: 30%
+  }
+  #apropos>.middle{
+    width:70%
+  }
+  div.gallery {
+    width: calc(100%/3);
+  }
+}
+
+
+@media screen and (max-width:540px){
+  #experiences div .right, #experiences div .left{
+    float: none;
+    width: 100%
+  }
+  #experiences div:nth-child(1) .right, #experiences div:nth-child(1) .left{
+    width: 100%;
+    float: none;
+  }
+  div.gallery {
+    width: calc(100%/2);
+  }
+  label{
+    display:block;
+    background-color: #6593A6;
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    padding: 10px
+  }
+   nav ul{
+    display: none;
+  }
+  input:checked ~ ul{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  nav li{
+    width: 100%;
+  }
+  #education div .right, #education div .left{
+    float:none;
+    width: 100%;
+  }
+}
