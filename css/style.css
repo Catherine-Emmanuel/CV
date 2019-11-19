@@ -199,7 +199,7 @@ i{
 /*média queries pour tablettes*/
 @media screen and (max-width:768px){
   p{
-    font-size: 20px;
+    font-size: 4vw;
   }
   #apropos{
     display: flex;
