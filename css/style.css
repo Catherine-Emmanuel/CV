@@ -59,7 +59,6 @@ nav a:hover{
   display: none;
 }
 .div1{
-  border: solid 2px black;
   padding: 15px;
   text-align:center;
   margin: 10px;
@@ -221,7 +220,8 @@ i{
   }
 
   #apropos>.left{
-    width: 30%
+    width: 100%;
+    text-align: center;
   }
   #apropos>.middle{
     width:70%
@@ -239,6 +239,9 @@ i{
   #experiences div .right, #experiences div .left{
     float: none;
     width: 100%
+  }
+  p{
+    font-size: 6vw;
   }
   nav{
     display: flex;
@@ -281,5 +284,8 @@ i{
   #education div .right, #education div .left{
     float:none;
     width: 100%;
+  }
+  .right,.left,.middle{
+    padding: 10px;
   }
 }
