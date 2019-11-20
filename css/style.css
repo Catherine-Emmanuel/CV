@@ -203,6 +203,7 @@ label, input{
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
+  color:#a0a75c;
 }
 i{
   padding: 8px;
