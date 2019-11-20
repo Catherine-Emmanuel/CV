@@ -59,6 +59,11 @@ nav a:hover{
   display: none;
   color:#a0a75c;
 }
+
+.middle p
+{
+  color:#a0a75c;
+}
 .div1{
   padding: 15px;
   text-align:center;
