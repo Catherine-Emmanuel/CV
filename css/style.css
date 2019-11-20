@@ -124,12 +124,8 @@ nav a:hover{
   width: 50%;
   float: left;
 }
-#Expériences{
-padding:10px;  
-}
-
-#education{
-  padding: 10px;
+section{
+padding:50px 10px;
 }
 
 #education div .right, #education div .left{
