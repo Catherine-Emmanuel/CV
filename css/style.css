@@ -9,15 +9,22 @@ h1,h2,h3,h4,h5,h6,nav>ul>li{
   font-weight: normal;
   text-align:center;
   text-transform: uppercase;
+  color: #2E4C59;
 }
 h1,h2,h3,h4,h5,h6{
-  font-size: 20px;
+  padding-bottom: 25px;
   font-weight: bold;
+  color: #2E4C59
 }
 
 p,li{
   font-family: 'PT Serif', serif;
   list-style: none;
+  color: #2E4C59;
+  font-size: 1.2vw;
+}
+#formation .left{
+  text-align: center;
 }
 
 section{
@@ -26,6 +33,7 @@ section{
 }
 
 nav{
+  z-index: 100;
   width: 100%;
   background-color: #6593A6;
   top: 0px;
@@ -46,7 +54,7 @@ nav li{
 nav a{
     display: block; /*Toute la surface sera cliquable*/
     text-decoration:none ;
-    color: black;
+    color: #2E4C59;
     border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
     padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
 }
@@ -57,13 +65,8 @@ nav a:hover{
 }
 .contact{
   display: none;
-  color:#a0a75c;
 }
 
-.middle p
-{
-  color:#a0a75c;
-}
 .div1{
   padding: 15px;
   text-align:center;
@@ -139,7 +142,7 @@ nav a:hover{
   float: left;
 }
 section{
-padding:50px 0px;
+padding:75px 0px;
 }
 
 #formation div .right, #formation div .left{
@@ -203,16 +206,20 @@ label, input{
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
-  color:#a0a75c;
+  color:#2E4C59;
 }
 i{
   padding: 8px;
-  color: #f1dec8;
+  color: #2E4C59;
 }
 #experiences > div.clear > div.left > ul:nth-child(4) > li > a > img{
   width: 200px;
 }
-
+footer{
+  padding: 20px 0;
+  text-align: center;
+  background: #f1dec8;
+}
 
 /*média queries pour tablettes*/
 @media screen and (max-width:768px){
@@ -248,7 +255,13 @@ i{
     float: none;
     width: 100%
   }
-  p{
+  h2{
+    font-size: 8vw;
+  }
+  h3{
+    font-size: 6vw;
+  }
+  p,li{
     font-size: 6vw;
   }
   nav{
