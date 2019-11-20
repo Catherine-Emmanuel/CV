@@ -27,7 +27,7 @@ section{
 
 nav{
   width: 100%;
-  background-color: grey;
+  background-color: #6593A6;
   top: 0px;
   position: sticky;
 }
@@ -55,7 +55,9 @@ nav a:hover{
     color: #f1dec8;
     border-bottom: 2px solid #f1dec8;
 }
-
+.contact{
+  display: none;
+}
 .div1{
   border: solid 2px black;
   padding: 15px;
@@ -109,6 +111,12 @@ nav a:hover{
 }
 .inline>li{
   display: inline;
+}
+.inline{
+  text-align: center;
+}
+#education img{
+  width: 300px;
 }
 #experiences > div:nth-child(2) > div.left>ul>li>img{
   height: 20px;
@@ -176,9 +184,7 @@ div.gallery img {
 
 
 
-#education > div > div.left > img{
-  width: 100%
-}
+
 #experiences > div > div.right > ul > li > a > img{
   width: 172px;
   padding-right: 25px;
@@ -193,7 +199,8 @@ label, input{
   align-items: center;
 }
 i{
-  padding: 8px
+  padding: 8px;
+  color: #f1dec8;
 }
 #experiences > div.clear > div.left > ul:nth-child(4) > li > a > img{
   width: 200px;
@@ -202,6 +209,9 @@ i{
 
 /*média queries pour tablettes*/
 @media screen and (max-width:768px){
+  .middle{
+    display: none;
+  }
   p{
     font-size: 4vw;
   }
@@ -209,9 +219,7 @@ i{
     display: flex;
     flex-flow: row wrap;
   }
-  #bordure{
-    width: 100%;
-  }
+
   #apropos>.left{
     width: 30%
   }
@@ -225,9 +233,24 @@ i{
 
 
 @media screen and (max-width:540px){
+  #education > div > div.left > img{
+    width: 100%
+  }
   #experiences div .right, #experiences div .left{
     float: none;
     width: 100%
+  }
+  nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .contact{
+    display: flex;
+    flex-direction: row;
+  }
+  .contact>a{
+    padding:10px;
   }
   #experiences div:nth-child(1) .right, #experiences div:nth-child(1) .left{
     width: 100%;
@@ -250,6 +273,7 @@ i{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    width: 100%;
   }
   nav li{
     width: 100%;
