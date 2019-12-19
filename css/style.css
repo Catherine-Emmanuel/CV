@@ -6,25 +6,58 @@
 
 h1,h2,h3,h4,h5,h6,nav>ul>li{
   font-family: 'PT Sans', sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   text-align:center;
   text-transform: uppercase;
-  color: #2E4C59;
+  color: #28297c;
 }
 h1,h2,h3,h4,h5,h6{
   padding-bottom: 25px;
   font-weight: bold;
-  color: #2E4C59
+  color: #28297c;
 }
 
 p,li{
   font-family: 'PT Serif', serif;
   list-style: none;
-  color: #2E4C59;
-  font-size: 1.2vw;
+  color: #28297c;
+  font-size: 1.3vw;
 }
 #formation .left{
   text-align: center;
+}
+button{
+  border: none;
+  padding: 10px 10px 10px 0;
+  background-color: #f1dec8;
+  font-family: 'PT Serif', serif;
+  color: #28297c;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 20px 0px;
+  border-radius: 10px
+}
+
+.left>a{
+  display: block;
+}
+button:hover{
+  color: white;
+  background-color: #6593A6;
+}
+a{
+  text-decoration: none;
+ color: #28297c;
+}
+h2{
+  text-align: left;
+  margin-left: 50px;
+}
+span{
+  padding: 10px 20px;
+  border-bottom: solid 3px;
+  font-size: 1.6em;
+  font-weight: lighter;
 }
 
 section{
@@ -75,7 +108,8 @@ nav a:hover{
 
 .background{
   padding: 50px;
-  background-color: #f1dec8;
+  background-image: url(../img/wave.png);
+  background-size: cover;
 }
 #experiences li{
   padding: 5px 0px;
@@ -86,7 +120,9 @@ nav a:hover{
 .right,.left,.middle{
   padding: 50px;
   box-sizing: border-box;
-
+}
+.right,.middle{
+  width: 45%;
 }
 .right30{
   float: right;
@@ -100,22 +136,20 @@ nav a:hover{
   padding: 50px;
   box-sizing: border-box;
 }
-
+#bordure{
+  border-radius: 10px;
+  width: 50%;
+}
 #apropos{
-  background-color: lightgrey;
   display: flex;
   flex-direction: row;
 }
 
-#experiences{
-  background-color: lightgrey;
+#experiences,#apropos{
+  background-color: #F2F2F2;
 }
 #experiences>div:nth-child(1)>div.right>ul>li>img{
   width: 72px;
-}
-
-#bordure{
-  border:solid 5px darkgrey;
 }
 .inline>li{
   display: inline;
@@ -142,7 +176,7 @@ nav a:hover{
   float: left;
 }
 section{
-padding:75px 0px;
+padding:75px 50px;
 }
 
 #formation div .right, #formation div .left{
@@ -248,6 +282,21 @@ footer{
 
 
 @media screen and (max-width:540px){
+  section{
+  padding:70px 10px;
+  }
+ .right, .left, .middle{
+       width: 100%;
+ }
+  h2{
+    text-align: center;
+    margin-left: 0px
+  }
+  .background{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
   #formation > div > div.left > img{
     width: 100%
   }
