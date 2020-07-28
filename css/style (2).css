@@ -192,8 +192,8 @@ padding:75px 50px;
 /*début gallerie images*/
 
 div.gallery img {
-  width: auto;
-  /* height: auto; */
+  width: 100%;
+  height: auto;
 }
 
 div.desc {
@@ -215,8 +215,14 @@ div.desc {
 }
 div.gallery {
   position: relative;
-  /* width: calc(100%/4); */
+  width: calc(100%/4);
 }
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
 /*fin gallerie images*/
 
 
